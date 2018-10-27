@@ -34,6 +34,14 @@ namespace Classi.Controllers
             return View();
         }
 
+        public IActionResult Login()
+        {
+
+            ViewData["Message"] = "Ingrese sus datos para comenzar: ";
+
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
