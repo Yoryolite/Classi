@@ -37,7 +37,7 @@ namespace Classi.Controllers
         public IActionResult Login()
         {
 
-            ViewData["Message"] = "Ingrese sus datos para comenzar: ";
+            ViewData["Message"] = "Bienvenido a CLassi!: ";
 
             return View();
         }
