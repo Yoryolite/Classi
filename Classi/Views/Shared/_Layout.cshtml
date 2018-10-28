@@ -16,9 +16,11 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
-<body>
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+<body class="homeHeader" id="homeHeader">
+	<!--aca lo que se esta agregando es la NAV BAR SUPERRIOR; todos los botones tienen una accion que te llevan a la siguiente vista-->
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">  
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -44,6 +46,7 @@
 		</div>
 	</nav>
 
+	<!-- porlo visto con partial lo que haces es generar  un render parcial no total de la pagina, en este caso muestra el consentimiento de cookies---> 
 	<partial name="_CookieConsentPartial" />
 
 	<div class="container body-content">
